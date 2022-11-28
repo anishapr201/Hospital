@@ -1,0 +1,11 @@
+{% extends 'base.html'%}
+{% block content %}
+{% for i in dept %}
+<div class="row pt-5">
+<div class="dpt mx-auto text-center des my-5 w-75 p-3 bg-danger">
+    <h3 class="text-white pt-4">{{i.dpt_name}}</h3>
+    <p>{{i.det_decription}}</p>
+</div>
+</div>
+{% endfor %}
+{% endblock %}
